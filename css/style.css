@@ -1,0 +1,446 @@
+/* -------------------------
+   RESET
+-------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------
+   GLOBAL STYLES
+-------------------------- */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F5F7FA;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff;
+    padding: 0 1rem;
+}
+
+.header-box {
+    display: flex;
+    position: static;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -------------------------
+   NAVIGATION
+-------------------------- */
+#main-nav {
+    display: none;
+    background-color: #FFF;
+    position: absolute;
+    font-size: 1em;
+    z-index: 2;
+    left: 0;
+    top: 3em;
+    height: 16rem;
+    width: 100%;
+}
+
+#main-nav ul {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    list-style-type: none;
+}
+
+#main-nav a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+#main-nav a:hover {
+    background-color: #8bbee858;
+}
+
+#main-nav a.active {
+    opacity: 0.9;
+    text-decoration: solid underline #0000006b 2px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.icon {
+    grid-column: 3;
+    cursor: pointer;
+    justify-self: end;
+}
+
+/* -------------------------
+   HERO SECTION
+-------------------------- */
+.hero {
+    background: url('../img/hero-office.jpg') center/cover no-repeat;
+    color: white;
+    padding: 8rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow:
+        0 0 5px #000,
+        0 0 10px #000,
+        0 0 20px #000,
+        0 0 40px #000;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 1rem auto 2rem;
+    text-shadow:
+        0 0 5px #000,
+        0 0 10px #000,
+        0 0 20px #000,
+        0 0 40px #000;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #E5A10D;
+    color: #fff;
+    padding: 0.9rem 1.6rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.cta-btn:hover {
+    background-color: #ce9009;
+}
+
+/* -------------------------
+   PAGE HEADER
+-------------------------- */
+.page-header {
+    margin: 2rem auto 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    color: #000;
+}
+
+.page-header p {
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* -------------------------
+   PRODUCTS PREVIEW
+-------------------------- */
+.products-preview {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.product-card {
+    background: white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+}
+
+.product-grid,
+.news-grid {
+    grid-template-columns: 1fr;
+}
+
+/* -------------------------
+   NEWS PREVIEW
+-------------------------- */
+.news-preview {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #fff;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+}
+
+/* NEWS PAGE */
+.news-list {
+    max-width: 760px;
+    margin: 1rem auto 0;
+    display: grid;
+    gap: 1.6rem;
+}
+
+.news-full {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.news-full a {
+    text-decoration: none;
+    color: #333;
+}
+
+.news-full a:hover {
+    text-decoration: underline;
+}
+
+.news-full img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+/* -------------------------
+   ABOUT PREVIEW
+-------------------------- */
+.about-preview {
+    padding: 4rem 2rem;
+    background: #8BBEE8;
+    color: white;
+    text-align: center;
+}
+
+.about-preview p {
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+/* ABOUT-PAGE*/
+.about-section {
+    padding: 1rem;
+}
+
+.about-text {
+    max-width: 900px;
+    color: #444;
+    background: #FFF;
+    padding: 1.2rem;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text ul {
+    padding: 0 1rem;
+}
+
+.team-section {
+    padding: 0 1rem 2rem;
+}
+
+.team-section h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.team-member {
+    background: #FFF;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 0.8rem;
+}
+
+/* -------------------------
+   CONTACT
+-------------------------- */
+.contact-section {
+    padding: 2rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Form */
+.contact-form {
+    background: #FFF;
+    padding: 1.2rem;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.contact-form label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    width: 100%;
+    resize: vertical;
+}
+
+.contact-form textarea { min-height: 140px; }
+
+.contact-form button {
+    background: #2C4C7B;
+    color: #fff;
+    border: none;
+    padding: 0.9rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Contact info panel */
+.contact-info {
+    background: #FFF;
+    padding: 1.2rem;
+    margin-bottom: 1.8rem;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    margin-bottom: 0.6rem;
+}
+
+/* -------------------------
+   FOOTER
+-------------------------- */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #2C4C7B;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* -------------------------
+   RESPONSIVE DESIGN
+-------------------------- */
+@media (min-width: 650px) {
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .header-box {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    #main-nav {
+        display: flex;
+        position: static;
+        height: auto;
+        width: auto;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+    }
+
+    #main-nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .product-card {
+        margin: 0;
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.6rem;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .contact-section {
+        display: grid;
+        grid-template-columns: 380px 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+}
